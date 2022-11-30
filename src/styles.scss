@@ -1,1 +1,146 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  overflow: hidden;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  background-color: #1c1b19 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.main-heading {
+  color: #fcd462 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #fcd462 !important;
+}
+
+.p-tabview {
+  .p-tabview-nav-container .p-tabview-nav {
+    background-color: #1c1b19 !important;
+    border: none !important;
+
+    .p-tabview-nav-link {
+      background-color: #1c1b19 !important;
+    }
+
+    .p-highlight .p-tabview-nav-link {
+      color: #fcd462 !important;
+    }
+
+    .p-tabview-nav-link:not(.p-disabled):focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .p-tabview-nav-link:not(.p-disabled):focus-visible {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .p-tabview-ink-bar {
+      background: #fcd462 !important;
+    }
+  }
+
+  .p-tabview-panels {
+    background-color: #1c1b19 !important;
+    padding: 20px;
+
+    .p-tabview-panel {
+      padding: 10px !important;
+    }
+  }
+}
+
+.p-dropdown {
+  width: 100%;
+  background: #353530 !important;
+  border-color: #353530 !important;
+
+  .p-dropdown-label {
+    color: #a3a3a3 !important;
+  }
+
+  .p-dropdown-panel {
+    background: #353530 !important;
+    border-color: #353530 !important;
+
+    .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover, .p-dropdown-item.p-highlight {
+      background: #fcd462 !important;
+      color: #a3a3a3 !important;
+    }
+
+    .p-dropdown-item span {
+      color: #ffffff;
+    }
+  }
+}
+
+.p-dropdown:not(.p-disabled).p-focus, .p-dropdown:not(.p-disabled):focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+p-checkbox {
+  .p-checkbox {
+    .p-checkbox-box.p-highlight {
+      border-color: #fcd462 !important;
+      background: #fcd462 !important;
+    }
+  }
+
+  .p-checkbox-label {
+    color: #ffffff;
+  }
+
+  .p-checkbox-label:hover, .p-checkbox-label-active {
+    color: #fcd462 !important;
+  }
+
+  .p-checkbox:not(.p-checkbox-disabled) {
+    .p-checkbox-box:hover {
+      border-color: #fcd462 !important;
+    }
+  }
+
+  .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.pi-times-circle {
+  font-size: 25px;
+  color: #e24c4c;
+  cursor: pointer;
+}
+
+.pi-check-circle {
+  font-size: 25px;
+  color: #fcd462;
+  cursor: pointer;
+}
+
+.required {
+  color: #e24c4c;
+}
+
+.p-inputtext {
+  background: #353530 !important;
+  border-color: #353530 !important;
+  width: 100%;
+}
+
+.p-inputtext:enabled:focus {
+  outline:none !important;
+  box-shadow: none !important;
+  border-color: #353530 !important;
+}
+
+.p-float-label label {
+  color:  #ffffff !important;
+}

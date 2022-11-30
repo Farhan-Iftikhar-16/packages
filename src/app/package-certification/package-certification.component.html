@@ -1,0 +1,58 @@
+<div class="package-certificate-container">
+  <div class="row">
+    <ng-container *ngIf="!showPackage">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <h6>Available Packages</h6>
+        <div class="packages-container">
+          <p-card (click)="showPackage = true">
+            <span>Package # 1</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 2</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 3</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 4</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 5</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 6</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 7</span>
+          </p-card>
+          <p-card (click)="showPackage = true">
+            <span>Package # 8</span>
+          </p-card>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h6>Environment</h6>
+        <p-dropdown [autoDisplayFirst]="false" [options]="environments"></p-dropdown>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="showPackage">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <h6>Package # 8</h6>
+
+        <div class="tags-container">
+          <h6>Tags</h6>
+          <p-checkbox class="mb-3" label="BUApproved" name="tag" value="val1"></p-checkbox>
+          <p-checkbox class="mb-3" label="isBeta" name="tag" value="val2"></p-checkbox>
+          <p-checkbox class="mb-3" label="Deprecated" name="tag" value="val3"></p-checkbox>
+
+          <div class="d-flex justify-content-end align-items-end gap-3">
+            <i class="pi pi-times-circle" (click)="showPackage = false"></i>
+            <i class="pi pi-check-circle" (click)="showPackage = false"></i>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

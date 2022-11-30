@@ -1,0 +1,15 @@
+.package-creation-container {
+  .configuration-summary-container {
+    border: 3px solid #fcd462;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 25%;
+    background: #353530;
+    border-radius: 8px;
+
+    span {
+      color: #ffffff;
+    }
+  }
+}
